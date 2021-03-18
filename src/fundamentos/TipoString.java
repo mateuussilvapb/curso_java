@@ -2,7 +2,7 @@ package fundamentos;
 
 public class TipoString {
 
-    public static void main(String[] args) {
+    public static void metodosComString(String[] args) {
 
         System.out.println("What?".charAt(0));
         System.out.println("What?".charAt(1));
@@ -43,7 +43,7 @@ public class TipoString {
                 nome, sobrenome, idade, salario);
         System.out.println(frase);
         
-        System.out.println("Oi, eu sou Mateus ¬¬".codePointAt(2));
+        
     }
 
 }
