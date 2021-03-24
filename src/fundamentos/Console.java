@@ -26,9 +26,9 @@ public class Console {
         int idade = entrada.nextInt();
 
         System.out.printf("\n\nOlá senhor %s %s. Seja bem vindo a plataforma! :D\n"
-                + "Notamos que sua idade é: %d anos.\n", 
+                + "Notamos que sua idade é: %d anos.\n",
                 nome, sobrenome, idade);
-        
+
         //Fecha o Scanner para economizar recursos alocados
         entrada.close();
     }

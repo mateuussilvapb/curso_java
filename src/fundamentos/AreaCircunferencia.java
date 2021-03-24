@@ -1,8 +1,5 @@
 package fundamentos;
 
-/**
- * @author MATEUS
- */
 public class AreaCircunferencia {
 
     public static void calcArea(String[] args) {

@@ -8,6 +8,6 @@ public class Temperatura {
         double fahrenheit = 86;
         double celsius = (fahrenheit - AJUSTE) * MULTIPLICADOR;
         System.out.println("O valor em fahrenheit é: " + fahrenheit + "Fº"
-                + "\nO resultado em celsius é: " + celsius +"Cº");
+                + "\nO resultado em celsius é: " + celsius + "Cº");
     }
 }

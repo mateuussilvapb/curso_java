@@ -21,16 +21,16 @@ public class ConversaoTiposPrimitivos {
 
         System.out.println("Valor armazenado em double: " + d
                 + "\nValor armazenado em float: " + f);
-        
+
         int i = 129;
         byte b = (byte) i;
-        
+
         System.out.println("\nValor armazenado em inteiro: " + i
                 + "\nValor armazenado em byte: " + b);
 
         double db = 1.65254632;
         int it = (int) db;
-        
+
         System.out.println("\nValor armazenado em double: " + db
                 + "\nValor armazenado em inteiro: " + it);
     }
