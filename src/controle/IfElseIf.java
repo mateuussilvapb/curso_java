@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class IfElseIf {
 
-    public static void main(String[] args) {
+    public static void ifElseIf(String[] args) {
         Scanner entrada = new Scanner(System.in);
         
         System.out.print("Digite a nota: ");
