@@ -2,7 +2,7 @@ package fundamentos;
 
 public class TipoString {
 
-    public static void metodosComString(String[] args) {
+    public static void tipoString(String[] args) {
 
         System.out.println("What?".charAt(0));
         System.out.println("What?".charAt(1));

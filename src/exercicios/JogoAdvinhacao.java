@@ -5,41 +5,36 @@ import java.util.Scanner;
 
 public class JogoAdvinhacao {
 
-    public static void main(String[] args) {
+    public static void jogoAdvinhacao(String[] args) {
 
         int numAleatorio = (int) (Math.random() * 100) + 1;
         Scanner entrada = new Scanner(System.in);
 
         int valor = 0;
         int tentativas = 1;
-        System.out.println("JOGO DA ADVINHAÇÃO!");
+        System.out.println("JOGO DA ADVINHAÇÃO!\n");
 
-//        for (int i = 0; i < 10; i++) {
-//            System.out.print("Informe um número: ");
-//            valor = entrada.nextInt();
-//            if (valor == numAleatorio) {
-//                System.out.printf("Parbéns, você acertou! \nO número correto é: %d",
-//                        numAleatorio);
-//            } else if (valor > numAleatorio) {
-//                
-//            }
-//        }
         do {
-            System.out.printf("Você está na dua %dº tentativa!\nInforme um número: ", tentativas);
+            System.out.printf("Você está na sua %dº tentativa!\nInforme um número: ", tentativas);
             valor = entrada.nextInt();
             tentativas++;
+            if (valor > numAleatorio) {
+                System.out.println("--O valor informado é maior que o número secreto.--\n");
+            } else if (valor < numAleatorio) {
+                System.out.println("--O valor informado é menor que o número secreto.--\n");
+            }
         } while (valor != numAleatorio && tentativas <= 10);
         
         if (valor == numAleatorio) {
-            System.out.printf("Parabén, você acertou!\n"
-                    + "O número gerado aleatoriamente foi: %d",
+            System.out.printf("\nParabén, você acertou!\n"
+                    + "O número gerado aleatoriamente foi: %d\n",
                     numAleatorio);
         } else if (tentativas == 11 && valor == numAleatorio) {
-            System.out.printf("Parabén, você acertou!\n"
-                    + "O número gerado aleatoriamente foi: %d",
+            System.out.printf("\nParabén, você acertou!\n"
+                    + "O número gerado aleatoriamente foi: %d\n",
                     numAleatorio);
         } else if (tentativas == 11 && valor != numAleatorio) {
-            System.out.printf("Infelizmente, não foi dessa vez!\n"
+            System.out.printf("\nInfelizmente, não foi dessa vez!\n"
                     + "O número aleatório foi: %d.\n", numAleatorio);
         } else {
             System.out.println("ERRO!");
