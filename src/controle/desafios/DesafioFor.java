@@ -1,4 +1,4 @@
-package desafios;
+package controle.desafios;
 
 public class DesafioFor {
 
