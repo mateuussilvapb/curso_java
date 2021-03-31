@@ -5,15 +5,6 @@ public class Produto {
     String nome;
     double preco;
     double desconto;
-
-    /*
-    Construtor da classe produto. Toda classe possui um construtor padrão, porém
-    é possível construir seu próprio construtor.
-     */
-    Produto(String nomeInicial) {
-        nome = nomeInicial;
-    }
-
     
     /*
     É possível implementar mais de um construtor também. O construtor abaixo é
@@ -26,12 +17,27 @@ public class Produto {
 
     }
 
+    /*
+    Construtor da classe produto. Toda classe possui um construtor padrão, porém
+    é possível construir seu próprio construtor.
+     */
+    Produto(String nomeInicial) {
+        nome = nomeInicial;
+    }
+  
     // Exemplo de outro construtor.
     Produto(String nomeInicial, double precoInicial) {
         nome = nomeInicial;
         preco = precoInicial;
     }
 
+    // Exemplo de outro construtor.
+    Produto(String nomeInicial, double precoInicial, double descontoInicial) {
+        nome = nomeInicial;
+        preco = precoInicial;
+        desconto = descontoInicial;
+    }
+    
     double valorComDesconto() {
 
         return preco * (1 - desconto);

@@ -22,6 +22,12 @@ public class ProdutoTeste {
 //        p2.preco = 1.50;
         p2.desconto = 0.29;
         
+        //Produto sendo definido com o construtor 3
+        Produto p4 = new Produto("Celular", 500, 0.2);
+//        p2.nome = "Caneta Preta";
+//        p2.preco = 1.50;
+//        p2.desconto = 0.29;
+
         double precoComDesconto1 = p1.valorComDesconto();
         double precoComDesconto2 = p2.valorComDesconto();
         
