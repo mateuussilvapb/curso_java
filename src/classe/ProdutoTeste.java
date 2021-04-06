@@ -21,7 +21,7 @@ public class ProdutoTeste {
 //        p2.nome = "Caneta Preta";
 //        p2.preco = 1.50;
         p2.desconto = 0.29;
-        
+
         //Produto sendo definido com o construtor 3
         Produto p4 = new Produto("Celular", 500, 0.2);
 //        p2.nome = "Caneta Preta";
@@ -30,14 +30,14 @@ public class ProdutoTeste {
 
         double precoComDesconto1 = p1.valorComDesconto();
         double precoComDesconto2 = p2.valorComDesconto();
-        
+
         System.out.printf("Nome: %s."
                 + "\nPreço: %.2f."
                 + "\nDesconto: %.2f%%."
                 + "\nValor com desconto: %.2f\n",
-                p1.nome, 
-                p1.preco, 
-                p1.desconto * 100, 
+                p1.nome,
+                p1.preco,
+                p1.desconto * 100,
                 precoComDesconto1);
     }
 
