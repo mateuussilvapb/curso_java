@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Jantar {
     
-    public static void main(String[] args) {
+    public static void jantar(String[] args) {
         
         Scanner entrada = new Scanner(System.in);
         String comida, nome;
