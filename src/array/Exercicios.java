@@ -22,19 +22,19 @@ public class Exercicios {
         }
 
         System.out.printf("\nMédia: %.2f.\n", total / notasAlunoA.length);
-        
+
         /*
         Essa é outra forma de se inicializar um array. Utilizando as chaves, é
         possível atribuir os valores de forma literal, sem que seja necessário
         declarar seu tamanho (está implicito).
-        */
-        double[] notasAlunoB = { 8.3, 9.6, 5.8, 7.2 };
-        
+         */
+        double[] notasAlunoB = {8.3, 9.6, 5.8, 7.2};
+
         total = 0;
         for (int i = 0; i < notasAlunoB.length; i++) {
             total += notasAlunoB[i];
         }
-        
+
         System.out.printf("\nMédia: %.2f.\n", total / notasAlunoB.length);
     }
 
