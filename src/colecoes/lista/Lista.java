@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Lista {
 
-    public static void main(String[] args) {
+    public static void lista(String[] args) {
 
         /*
         Obs.: ArrayList não utiliza o HashCode
-        */
+         */
         ArrayList<Usuario> lista = new ArrayList<>();
         Usuario u1 = new Usuario("Mateus");
         lista.add(u1);
@@ -23,8 +23,7 @@ public class Lista {
 
         lista.remove(1); //Remove através do índice.
         lista.remove(new Usuario("Renê")); //Remove realizando uma busca.
-        
-        
+
         for (Usuario u : lista) {
             System.out.println(u.toString()); //Ou apenas 'u' pois implicitamente ele chama o 'toString'
         }

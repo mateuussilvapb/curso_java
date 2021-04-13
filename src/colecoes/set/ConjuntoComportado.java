@@ -1,4 +1,4 @@
-package colecoes;
+package colecoes.set;
 
 import java.util.Set;
 import java.util.TreeSet;
