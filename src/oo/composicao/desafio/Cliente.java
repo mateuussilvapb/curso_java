@@ -12,17 +12,15 @@ public class Cliente {
         this.nome = nome;
     }
 
-    double obterValorTotal() {
+    void addCompra(Compra compra) {
+        this.compras.add(compra);
+    }
+
+    double valorTotal() {
         double total = 0;
         if (!compras.isEmpty()) {
             for (Compra compra : compras) {
-                if (!compra.itens.isEmpty()) {
-                    for (Item item : compra.itens) {
-                        if (item.quantidade > 0) {
-                            total += item.quantidade * item.produto.preco;
-                        }
-                    }
-                }
+                total += compra.obterValorTotal();
             }
         }
         return total;
