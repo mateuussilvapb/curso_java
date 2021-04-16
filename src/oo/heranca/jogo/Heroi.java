@@ -2,6 +2,14 @@ package oo.heranca.jogo;
 
 public class Heroi extends Jogador {
 
+    Heroi (int x, int y){
+        /*
+        Utilizando o 'super' no construtor de uma classe herdada, a classe chamará
+        o construtor da classe pai. O construtor chamado irá variar de acordo com
+        a quantidade de parâmetros informados.
+        */
+        super(x, y);
+    }
     @Override
     boolean atacar(Jogador oponente) {
         boolean ataque1 = super.atacar(oponente);

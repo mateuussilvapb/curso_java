@@ -6,6 +6,20 @@ public class Jogador {
     int x;
     int y;
 
+    Jogador() {
+        /*
+        Ao utilizar o 'this' no construtor padrão e passar os parâmetros necessários,
+        o construtor padrão chamará outro construtor de acordo com os parâmetros
+        informados. 
+         */
+        this(0, 0);
+    }
+
+    Jogador(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     boolean atacar(Jogador oponente) {
         /*
         Math.abs retorna apenas valores positivos. Idêntico a módulo.

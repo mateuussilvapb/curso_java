@@ -2,7 +2,16 @@ package oo.heranca.desafio;
 
 public class Carro {
 
+    /*
+    Variáveis constantes em classes precisam ser inicializadas na declaração em si
+    ou pelo menos no construtor.
+     */
+    final int VELOCIDADE_MAXIMA;
     int velocidadeAtual = 0;
+
+    Carro(int velocidadeMaxima) {
+        this.VELOCIDADE_MAXIMA = velocidadeMaxima;
+    }
 
     @Override
     public String toString() {
@@ -10,12 +19,11 @@ public class Carro {
     }
 
     void acelerar() {
-        if (velocidadeAtual <= 245) {
-            this.velocidadeAtual += 5;
-        } else if (velocidadeAtual == 250) {
+        if (velocidadeAtual + 5 > this.VELOCIDADE_MAXIMA) {
+            this.velocidadeAtual = this.VELOCIDADE_MAXIMA;
             System.out.println("O CARRO ALCANÇOU A VELOCIDADE MÁXIMA PERMITIDA.");
         } else {
-            velocidadeAtual = 250;
+            velocidadeAtual += 5;
         }
     }
 
