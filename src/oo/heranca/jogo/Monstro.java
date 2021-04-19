@@ -2,13 +2,13 @@ package oo.heranca.jogo;
 
 public class Monstro extends Jogador {
 
-    Monstro() {
+    public Monstro() {
         this(0, 0);
-        this.vida = 200;
+        this.setVida(200);
     }
 
-    Monstro(int x, int y) {
+    public Monstro(int x, int y) {
         super(x, y);
-        this.vida = 200;
+        this.setVida(200);
     }
 }

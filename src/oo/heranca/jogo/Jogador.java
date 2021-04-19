@@ -2,11 +2,19 @@ package oo.heranca.jogo;
 
 public class Jogador {
 
-    int vida = 100;
-    int x;
-    int y;
+    private int vida = 100;
+    private int x;
+    private int y;
 
-    Jogador() {
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    protected Jogador() {
         /*
         Ao utilizar o 'this' no construtor padrão e passar os parâmetros necessários,
         o construtor padrão chamará outro construtor de acordo com os parâmetros
@@ -15,12 +23,12 @@ public class Jogador {
         this(0, 0);
     }
 
-    Jogador(int x, int y) {
+    protected Jogador(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    boolean atacar(Jogador oponente) {
+    public boolean atacar(Jogador oponente) {
         /*
         Math.abs retorna apenas valores positivos. Idêntico a módulo.
          */
@@ -38,7 +46,7 @@ public class Jogador {
         }
     }
 
-    boolean andar(Direcao direcao) {
+    public boolean andar(Direcao direcao) {
 
         switch (direcao) {
             case NORTE:

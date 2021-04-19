@@ -8,9 +8,11 @@ public class Carro {
      */
     final int VELOCIDADE_MAXIMA;
     int velocidadeAtual = 0;
+    int delta;
 
-    Carro(int velocidadeMaxima) {
+    protected Carro(int velocidadeMaxima, int delta) {
         this.VELOCIDADE_MAXIMA = velocidadeMaxima;
+        this.delta = delta;
     }
 
     @Override
@@ -18,16 +20,16 @@ public class Carro {
         return "Velocidade atual -> " + this.velocidadeAtual + "km/h.\n";
     }
 
-    void acelerar() {
-        if (velocidadeAtual + 5 > this.VELOCIDADE_MAXIMA) {
+    public void acelerar() {
+        if (velocidadeAtual + delta > this.VELOCIDADE_MAXIMA) {
             this.velocidadeAtual = this.VELOCIDADE_MAXIMA;
             System.out.println("O CARRO ALCANÇOU A VELOCIDADE MÁXIMA PERMITIDA.");
         } else {
-            velocidadeAtual += 5;
+            velocidadeAtual += delta;
         }
     }
 
-    void frear() {
+    public void frear() {
         if (velocidadeAtual >= 5) {
             this.velocidadeAtual -= 5;
         } else if (velocidadeAtual == 0) {
