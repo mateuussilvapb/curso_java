@@ -6,7 +6,7 @@ import oo.heranca.desafio.Ferrari;
 
 public class Teste {
 
-    public static void main(String[] args) {
+    public static void teste(String[] args) {
 
         Carro corolla = new Corolla();
         Ferrari ferrari = new Ferrari();

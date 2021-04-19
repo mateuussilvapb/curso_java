@@ -3,7 +3,10 @@ package oo.heranca.desafio;
 /*
 'implements' diz respeito a interface
  */
-public class Ferrari extends Carro implements Esportivo {
+public class Ferrari extends Carro implements Esportivo, Luxo {
+
+    boolean ligarTurbo;
+    boolean ligarAr;
 
     public Ferrari() {
         this(372, 15);
@@ -21,12 +24,35 @@ public class Ferrari extends Carro implements Esportivo {
 
     @Override
     public void ligarTurbo() {
-        super.delta = 35;
+        ligarTurbo = true;
     }
 
     @Override
     public void desligarTurbo() {
-        super.delta = 15;
+        ligarTurbo = false;
+    }
+
+    @Override
+    public void ligarAr() {
+        ligarAr = true;
+    }
+
+    @Override
+    public void desligarAr() {
+        ligarAr = false;
+    }
+
+    @Override
+    public int getDelta() {
+        if (ligarTurbo && !ligarAr) {
+            return 35;
+        } else if (ligarTurbo && ligarAr) {
+            return 30;
+        } else if (!ligarAr && !ligarAr) {
+            return 25;
+        } else {
+            return 15;
+        }
     }
 
 }
