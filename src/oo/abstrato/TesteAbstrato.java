@@ -2,7 +2,7 @@ package oo.abstrato;
 
 public class TesteAbstrato {
 
-    public static void main(String[] args) {
+    public static void tAbstrato(String[] args) {
      
         Mamifero a = new Cachorro();
         System.out.println(a.mover());
