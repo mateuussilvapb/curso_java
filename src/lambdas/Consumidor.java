@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class Consumidor {
 
-    public static void main(String[] args) {
+    public static void consumidor(String[] args) {
 
         Consumer<Produto> imprimir = p -> System.out.printf(
                 "---DESCRIÇÃO---\nNome: %s\nValor: %.2f\nCom desconto: %.2f\n\n",
