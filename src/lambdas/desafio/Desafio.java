@@ -7,7 +7,7 @@ import lambdas.Produto;
 
 public class Desafio {
 
-    public static void main(String[] args) {
+    public static void desafio(String[] args) {
 
         //Recebe um tipo e retorna outro
         Function<Produto, Double> valorFinal
