@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class ImprimindoObjetos {
 
-    public static void main(String[] args) {
+    public static void imprimindoObjetos(String[] args) {
 
         List<String> aprovados = Arrays.asList("Lu", "Gui", "Luca", "Ana");
 
