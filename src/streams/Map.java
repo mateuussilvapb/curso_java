@@ -7,8 +7,11 @@ import java.util.function.UnaryOperator;
 
 public class Map {
 
-    public static void main(String[] args) {
+    public static void map(String[] args) {
      
+        /*
+        Consumer é uma interface que recebe um parâmetro e não retorna nada.
+        */
         Consumer<String> print = System.out::print;
         
         List<String> marcas = Arrays.asList("BMW ", "Audi ", "Honda ");
