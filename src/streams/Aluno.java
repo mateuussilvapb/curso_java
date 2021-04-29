@@ -6,10 +6,16 @@ public class Aluno {
 
     private final String nome;
     private final double nota;
+    private final boolean bomComportamento;
 
-    public Aluno(String nome, double nota) {
+    public Aluno(String nome, double nota){
+        this(nome, nota, true);
+    }
+    
+    public Aluno(String nome, double nota, boolean bomComportamento) {
         this.nome = nome;
         this.nota = nota;
+        this.bomComportamento = bomComportamento;
     }
 
     public String getNome() {
@@ -54,6 +60,10 @@ public class Aluno {
         return "Meu nome é: " + this.nome 
                 + "\nMinha nota foi: " + this.nota
                 + "\n";
+    }
+
+    public boolean isBomComportamento() {
+        return bomComportamento;
     }
     
     
