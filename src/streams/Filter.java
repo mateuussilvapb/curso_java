@@ -1,5 +1,6 @@
 package streams;
 
+import excecao.Aluno;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;

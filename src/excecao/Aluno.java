@@ -1,4 +1,4 @@
-package streams;
+package excecao;
 
 import java.util.Objects;
 
