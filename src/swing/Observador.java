@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 
 public class Observador {
 
-    public static void main(String[] args) {
+    public static void observador(String[] args) {
 
         JFrame janela = new JFrame("Observador");
         /*

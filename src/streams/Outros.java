@@ -35,7 +35,7 @@ public class Outros {
         execução para, idependentemente se os elementos posteriores atendam a essa
         condição 
          */
-        alunos.stream().distinct().takeWhile(a -> a.getNota() >= 7).forEach(System.out::println);
+//        alunos.stream().distinct().takeWhile(a -> a.getNota() >= 7).forEach(System.out::println);
 
     }
 
