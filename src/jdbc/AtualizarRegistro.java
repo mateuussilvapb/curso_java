@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class AtualizarRegistro {
     
-    public static void main(String[] args) throws SQLException {
+    public static void atualuizarRegistro(String[] args) throws SQLException {
         Connection conexao = FabricaConexao.getConexao();
         Scanner entrada = new Scanner(System.in);
         String sqlConsulta = "SELECT * FROM pessoas WHERE codigo = ?";
